@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Решалка судоку</title>
+  <style>
+    table {
+      margin: 20px auto;
+    }
+    input {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      font-size: 34px;
+      text-align: center;
+      outline: none;
+    }
+    button {
+      display: block;
+      width: 200px;
+      padding: 24px;
+      background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+      border: none;
+      border-radius: 14px;
+      font-size: 24px;
+      cursor: pointer;
+      outline: none;
+      margin: 10px auto;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #C5DDE8, #EECFBA);
+      color: white;
+    }
+    td {
+      width: 42px;
+      height: 42px;
+    }
+    .divide {
+      border-bottom: 1px solid red;
+    }
+    .divideSide {
+      border-right: 3px solid black;
+    }
+  </style>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td><input type="text" size="1" maxlength="1" value=""></td>
+      <td><input type="text" size="1" maxlength="1" value=""></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+    <tr class="divide">
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+    <tr>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td class="divideSide"><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+      <td><input type="text" size="1" maxlength="1"></td>
+    </tr>
+  </table>
+  <button>Реши мне судоку!</button>
+  <script src="sudoku.js"></script>
+</body>
+</html>
